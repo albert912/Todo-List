@@ -1,0 +1,758 @@
+body {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.main {
+
+    position: absolute;
+   
+    height: 95vh;
+
+    width: 85vw;
+
+    left: 15vw;
+
+    background: beige;
+}
+
+
+
+
+.nop {
+    
+ position: absolute; 
+
+font-weight: bolder;
+
+font-size: 60px;
+
+top: -30px;
+
+left: 60px ;
+
+}
+
+
+
+
+
+.not {
+    position: absolute; 
+
+    font-size: 30px;
+
+    top: 120px ;
+
+    left: 60px ;
+
+
+}
+
+
+
+
+.side {
+
+    position: absolute;
+
+
+
+   
+    height: 95vh;
+
+    width: 15vw;
+
+
+    background: burlywood;
+
+
+}
+
+.task {
+
+    font-size: 50px;
+
+    position: absolute;
+
+    left: 40px;
+
+}
+
+
+
+.tod {
+
+    font-size: 25px;
+
+
+    position: absolute;
+
+    top: 119px;
+
+    left: 75px;
+
+
+   border: none;
+
+   background-color: transparent;
+
+}
+
+.todyy {
+
+    position: absolute;
+
+   top: 115px;
+
+    left: 30px;
+}
+
+.seven {
+
+    font-size: 25px;
+
+     position: absolute;
+
+   top: 173px;
+
+    left: 75px; 
+
+    border: none;
+
+    background-color: transparent;
+
+}
+
+.seveni {
+
+    position: absolute;
+
+    top: 165px;
+
+    left: 30px;
+
+
+
+}
+
+
+
+.ovdue {
+
+    font-size: 25px;
+
+    position: absolute;
+
+    top: 220px;
+
+    left: 75px;
+
+    border: none;
+
+    background-color: transparent;
+
+
+
+}
+
+
+
+.ovrdue {
+
+    position: absolute;
+
+    top: 217px;
+
+    left: 30px;
+
+
+   
+}
+
+.inb {
+
+    font-size: 25px;
+
+    position: absolute;
+
+     top: 265px;
+
+    left: 75px;
+
+ 
+    border: none;
+
+    background-color: transparent;
+
+}
+
+.inbi {
+
+    position: absolute;
+
+    top: 260px;
+
+   left: 30px;
+
+
+}
+
+
+
+
+
+
+.proj {
+
+  font-size: 28px;
+
+  position: absolute;
+
+
+  top: 300px;
+
+  left: 40px;
+
+  
+
+
+}
+
+
+.projdiv {
+    position: absolute;
+    top: 385px;
+    left: 12.5px;
+    width: 14vw;
+    height: 500px;
+    
+    background-color: transparent;
+
+
+}
+
+
+
+
+
+.add {
+
+    position: absolute;
+
+    top: 325px;
+
+    left: 260px;
+  
+
+}
+
+
+
+.diolog {
+
+width: 400px;
+
+height: 220px;
+
+background: burlywood;
+
+}
+
+
+
+
+
+.chtext {
+
+    font-size: 14px;
+}
+
+
+.projdiv {
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: flex-start;
+
+
+
+}
+
+
+.default {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 25px;
+
+    height: 50px;
+
+    width: 14vw;
+
+
+    border-top: 3px solid black;
+
+
+}
+
+.pdefault {
+
+    border: 1px red solid;
+    width: 250px;
+    height: 40px ;
+    align-content: center;
+}
+
+.ticon {
+
+
+}
+
+
+
+
+.sdiv {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 25px;
+
+    height: 50px;
+
+    width: 14vw;
+
+
+    border-top: 3px solid black;
+     
+
+}
+
+
+.adtodo {
+
+    position: absolute;
+
+    border-radius: 10px;
+
+    width: 100px;
+
+    top: 70px;
+
+    right: 50px;
+}
+
+
+
+
+.ttitle {
+    position: absolute; 
+
+    font-weight: bolder;
+    
+    font-size: 60px;
+    
+    top: -30px;
+    
+    left: 60px ;
+}
+
+
+
+
+.dadto {
+
+width: 200px;
+
+height: 500px;
+
+background: burlywood;
+
+
+
+
+}
+
+
+.sh1dt {
+
+    position: absolute;
+
+   left: 50px ;
+
+}
+
+.sdttext {
+
+    position: absolute;
+
+    top: 85px; 
+
+   left: 30px ;
+}
+
+.sttinput {
+
+    position: absolute;
+
+    top: 120px;
+
+    left: 30px ;
+}
+
+.smc {
+
+    position: absolute;
+
+    top: 130px;
+
+    left: 30px ;
+
+    font-size: 13px;
+}
+
+.tododiv {
+
+   
+    position: absolute;
+
+    border: 1px solid black;
+   
+    height: 80vh;
+
+    width: 84vw;
+
+    top: 120px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: start;
+
+
+
+    
+}
+
+
+.smspandiv {
+
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+
+border: 2px solid brown;
+
+width: 85vw;
+
+height: 10vh;
+
+}
+
+
+.scspandiv1 {
+
+   
+
+    display: flex;
+
+    justify-content: space-between;
+
+    
+
+ 
+border: 2px solid yellow;
+
+height: 35px;
+
+width: 300px;
+
+top: 20px;
+
+left: 30px;
+    
+
+
+}
+
+
+.scspandiv2 {
+
+  
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    border: 2px solid yellow;
+
+    height: 35px;
+
+    width: 280px;
+
+    top: 20px;
+
+    right: -40px;
+  
+
+
+}
+
+.safspan {
+
+    display: flex;
+
+    justify-content: center;
+
+    border: 1px solid red;
+    width: 50px;
+    height: 30px;
+    
+    top: 20px;
+
+    left: 50px;
+
+}
+
+.sfspan {
+
+  display: flex;
+
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+
+
+    border: 1px solid red;
+    width: 100px;
+    height: 30px;
+    
+    top: 20px;
+
+    left: 50px;
+
+}
+
+.stspan {
+
+
+      display: flex;
+
+      align-items: center;
+
+
+
+
+    border: 1px solid red;
+
+
+  
+
+    border: 1px solid red;
+    width: 50px;
+    height: 30px;
+    
+    top: 20px;
+
+    left: 130px ;
+
+    color: grey;
+}
+
+
+
+
+
+
+.sthspan {
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+
+    border: 1px solid red;
+
+
+
+    border: 1px solid red;
+    width: 50px;
+    height: 30px;
+    
+    top: 20px;
+    right: 220px;
+}
+
+.sfospan {
+
+
+    display: flex;
+
+    align-items: center;
+
+
+    border: 1px solid red;
+
+ 
+
+    border: 1px solid red;
+    width: 120px;
+    height: 30px;
+    
+    top: 20px;
+    right: 80px;
+}
+
+.sfispan {
+
+    display: flex;
+
+    align-items: center;
+
+
+    border: 1px solid red;
+
+ 
+
+    border: 1px solid red;
+    width: 50px;
+    height: 30px;
+    
+    top: 20px;
+    right: 80px;
+
+
+}
+
+.ssispan {
+
+    display: flex;
+
+    align-items: center;
+
+
+    border: 1px solid red;
+
+ 
+
+    border: 1px solid red;
+    width: 60px;
+    height: 30px;
+    
+    top: 20px;
+    right: 80px;
+
+
+
+}
+
+
+
+
+
+.sdlabel {
+
+    position: absolute;
+
+
+   top: 170px;
+
+   left: 30px;
+}
+
+.starea {
+
+    position: absolute;
+
+    left: 32px;
+
+   top: 200px;
+
+   height: 120px;
+}
+
+.sddlabel {
+    position: absolute;
+    top: 370px;
+    left: 30px;
+}
+
+.sdinput {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.splabel {
+    position: absolute;
+    top: 440px;
+    left: 30px;
+}
+
+.slist {
+    position: absolute;
+   top: 465px;
+   left: 30px;
+}
+
+
+
+
+.sdsbutton {
+
+    position: absolute;
+    top: 500px;
+    left: 30px;
+}
+
+
+.scanbutton {
+    position: absolute;
+    top: 500px;
+    left: 120px;
+
+}
+
+
+
+
+
+
+
+
+.foot {
+
+    position: absolute;
+    width: 100vw;
+    height: 5vh;
+    bottom: 0vh;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

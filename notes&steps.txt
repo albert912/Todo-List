@@ -1,0 +1,142 @@
+parse and stringify are important for json in todo list app project. 
+
+Syntaxes
+----
+
+1. Factory Function
+
+function createPerson(name, age) {
+    return {
+        name,
+        age,
+        greet() {
+            console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
+        }
+    };
+}
+
+const person1 = createPerson('Alice', 25);
+person1.greet(); // Output: Hi, I'm Alice and I'm 25 years old.
+
+
+2. Constructor Function
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.greet = function () {
+        console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
+    };
+}
+
+const person2 = new Person('Bob', 30);
+person2.greet(); // Output: Hi, I'm Bob and I'm 30 years old.
+
+
+Here's a short and concise example of the three syntaxes:
+
+1. Factory Function
+javascript
+Copy code
+function createPerson(name, age) {
+    return {
+        name,
+        age,
+        greet() {
+            console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
+        }
+    };
+}
+
+const person1 = createPerson('Alice', 25);
+person1.greet(); // Output: Hi, I'm Alice and I'm 25 years old.
+2. Constructor Function
+javascript
+Copy code
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.greet = function () {
+        console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
+    };
+}
+
+const person2 = new Person('Bob', 30);
+person2.greet(); // Output: Hi, I'm Bob and I'm 30 years old.
+
+3. Class Syntax
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
+    }
+}
+
+const person3 = new Person('Charlie', 35);
+
+----
+
+User interface which will be used : Today, Next 7 Days, Inbox
+
+
+This is how my to-do list should look like : sidebar: Task List text ---> today, next 7 days, overdue, inbox ---> Projects, project names, delete after project name.
+
+In the task&project section ---> Project name at the top, task names one below the other. Next to the task name ---> details, priority (with color), due date, edit button (with icon), delete button (with icon).
+
+
+person3.greet(); // Output: Hi, I'm Charlie and I'm 35 years old.
+
+--
+
+Current Steps ------> 
+
+
+I NEED TO DO A BIG REFACTOR ON MY CODE WHICH IS THIS 
+
+--> Make todos objects and upload them to page by placing them to same place.
+
+Todo class example 
+
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
+    }
+}
+
+const person3 = new Person('Charlie', 35);
+
+
+
+
+
+
+
+
+
+a.Code about todos should be transfferred to projects 
+
+b. When a project is clicked, the name of the project and todos related to it should be displayed on main section 
+
+c. When a project is deleted, the content of the main section should be about the previous project 
+
+d. if all projects are deleted, the main section should tell that there is No Projects and a new project should be added 
+
+e. task list icons should show the content related to itself on the main section 
+
+f. border colors should be removed 
+
+g. extra space which cause overflowing should be removed.
+
+h. default main section content should be the content of the default project.
+

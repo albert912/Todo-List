@@ -1,0 +1,20 @@
+1. buttons and divs do not get focused when clicked.
+
+2. as the project divs have the same class name, I think that opening main section with different content would not going to be happen.
+
+3.
+
+
+
+Notes
+
+----
+
+firstinput = ttinput
+
+secondinput (textarea)= tarea
+
+thirdinput = dinput
+
+fourthinput (select boxes) = list
+
