@@ -100,33 +100,6 @@ I NEED TO DO A BIG REFACTOR ON MY CODE WHICH IS THIS
 
 --> Make todos objects and upload them to page by placing them to same place.
 
-Todo class example 
-
-
-class Todo {
-    constructor(task, description, priority, duedate) {
-        this.task = task;
-        this.description = description;
-        this.priority = priority;
-        this.duedate = duedate;
-    }
-
-    greet() {
-   return `Tasks, ${this.task}, ${this.description}, ${this.priority}, ${this.duedate}`;
-    }
-}
-
-const todo1 = new Todo('Clean', 'clean the house', 'high', '29.07.1999');
-
-
-console.log(todo1.greet());
-
-
-
-How to progress = Click add to do button -- enter text to input -- click submit button --- store input values ----  
-
-
-
 
 
 

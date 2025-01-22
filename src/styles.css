@@ -1,758 +1,295 @@
+/* Base styles */
 body {
+    background-color: #f4f0e1; /* Light beige background */
+    font-family: "Comic Sans MS", sans-serif; /* Fun, playful font */
+  }
+  
+  * {
     margin: 0;
     padding: 0;
-
-
-}
-
-.main {
-
-    position: absolute;
-   
-    height: 95vh;
-
-    width: 85vw;
-
-    left: 15vw;
-
-    background: beige;
-}
-
-
-
-
-.nop {
-    
- position: absolute; 
-
-font-weight: bolder;
-
-font-size: 60px;
-
-top: -30px;
-
-left: 60px ;
-
-}
-
-
-
-
-
-.not {
-    position: absolute; 
-
-    font-size: 30px;
-
-    top: 120px ;
-
-    left: 60px ;
-
-
-}
-
-
-
-
-.side {
-
-    position: absolute;
-
-
-
-   
-    height: 95vh;
-
-    width: 15vw;
-
-
-    background: burlywood;
-
-
-}
-
-.task {
-
-    font-size: 50px;
-
-    position: absolute;
-
-    left: 40px;
-
-}
-
-
-
-.tod {
-
-    font-size: 25px;
-
-
-    position: absolute;
-
-    top: 119px;
-
-    left: 75px;
-
-
-   border: none;
-
-   background-color: transparent;
-
-}
-
-.todyy {
-
-    position: absolute;
-
-   top: 115px;
-
-    left: 30px;
-}
-
-.seven {
-
-    font-size: 25px;
-
-     position: absolute;
-
-   top: 173px;
-
-    left: 75px; 
-
-    border: none;
-
-    background-color: transparent;
-
-}
-
-.seveni {
-
-    position: absolute;
-
-    top: 165px;
-
-    left: 30px;
-
-
-
-}
-
-
-
-.ovdue {
-
-    font-size: 25px;
-
-    position: absolute;
-
-    top: 220px;
-
-    left: 75px;
-
-    border: none;
-
-    background-color: transparent;
-
-
-
-}
-
-
-
-.ovrdue {
-
-    position: absolute;
-
-    top: 217px;
-
-    left: 30px;
-
-
-   
-}
-
-.inb {
-
-    font-size: 25px;
-
-    position: absolute;
-
-     top: 265px;
-
-    left: 75px;
-
- 
-    border: none;
-
-    background-color: transparent;
-
-}
-
-.inbi {
-
-    position: absolute;
-
-    top: 260px;
-
-   left: 30px;
-
-
-}
-
-
-
-
-
-
-.proj {
-
-  font-size: 28px;
-
-  position: absolute;
-
-
-  top: 300px;
-
-  left: 40px;
-
+    box-sizing: border-box;
+  }
   
-
-
-}
-
-
-.projdiv {
-    position: absolute;
-    top: 385px;
-    left: 12.5px;
-    width: 14vw;
-    height: 500px;
-    
-    background-color: transparent;
-
-
-}
-
-
-
-
-
-.add {
-
-    position: absolute;
-
-    top: 325px;
-
-    left: 260px;
+  /* Layout */
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "projects-section tasks-section";
+  }
   
-
-}
-
-
-
-.diolog {
-
-width: 400px;
-
-height: 220px;
-
-background: burlywood;
-
-}
-
-
-
-
-
-.chtext {
-
-    font-size: 14px;
-}
-
-
-.projdiv {
-
-display: flex;
-
-flex-direction: column;
-
-justify-content: flex-start;
-
-
-
-}
-
-
-.default {
-
+  .header {
+    grid-area: header;
+    background-color: slategray; /* Wood brown */
+    padding: 15px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f1e0c6; /* Soft beige */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
+  
+  .projects-section {
     display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    font-size: 25px;
-
-    height: 50px;
-
-    width: 14vw;
-
-
-    border-top: 3px solid black;
-
-
-}
-
-.pdefault {
-
-    border: 1px red solid;
-    width: 250px;
-    height: 40px ;
-    align-content: center;
-}
-
-.ticon {
-
-
-}
-
-
-
-
-.sdiv {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    font-size: 25px;
-
-    height: 50px;
-
-    width: 14vw;
-
-
-    border-top: 3px solid black;
-     
-
-}
-
-
-.adtodo {
-
-    position: absolute;
-
-    border-radius: 10px;
-
-    width: 100px;
-
-    top: 70px;
-
-    right: 50px;
-}
-
-
-
-
-.ttitle {
-    position: absolute; 
-
-    font-weight: bolder;
-    
-    font-size: 60px;
-    
-    top: -30px;
-    
-    left: 60px ;
-}
-
-
-
-
-.dadto {
-
-width: 200px;
-
-height: 500px;
-
-background: burlywood;
-
-
-
-
-}
-
-
-.sh1dt {
-
-    position: absolute;
-
-   left: 50px ;
-
-}
-
-.sdttext {
-
-    position: absolute;
-
-    top: 85px; 
-
-   left: 30px ;
-}
-
-.sttinput {
-
-    position: absolute;
-
-    top: 120px;
-
-    left: 30px ;
-}
-
-.smc {
-
-    position: absolute;
-
-    top: 130px;
-
-    left: 30px ;
-
-    font-size: 13px;
-}
-
-.tododiv {
-
-   
-    position: absolute;
-
-    border: 1px solid black;
-   
-    height: 80vh;
-
-    width: 84vw;
-
-    top: 120px;
-
-    display: flex;
-
     flex-direction: column;
-
-    justify-content: start;
-
-
-
-    
-}
-
-
-.smspandiv {
-
-
-display: flex;
-
-justify-content: space-between;
-
-align-items: center;
-
-
-border: 2px solid brown;
-
-width: 85vw;
-
-height: 10vh;
-
-}
-
-
-.scspandiv1 {
-
-   
-
+    align-items: center;
+    height: 100%;
+    grid-area: projects-section;
+    background-color: khaki; /* Warm wood brown */
+    color: #333;
+    padding: 0px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow-y: auto;
+  }
+  
+  .tasks-section {
+    grid-area: tasks-section;
+    background-color: silver; /* Soft brown */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  /* Cartoony buttons */
+  .add-project-btn,
+  .add-task-btn {
+    margin: 10px;
+    margin-top: 30px;
+    width: 80%;
+    padding: 15px 25px;
+    background-color: grey; /* Dark brown */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-project-btn:hover,
+  .add-task-btn:hover {
+    background-color: goldenrod; /* Darker brown on hover */
+    transform: scale(1.02);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .add-project-btn:active,
+  .add-task-btn:active {
+    background-color: #4e342e; /* Even darker brown on click */
+    transform: scale(0.95);
+  }
+  
+  /* Project and Task Grid Layout */
+  .projects-list,
+  .tasks-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Project Button Styling */
+  .project-button {
+    background-color: coral; /* Light beige */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Headings for Project Button */
+  .project-button h3 {
+    color: #3e2723; /* Deep brown */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Paragraph text inside Project Button */
+  .project-button p {
+    font-size: 1.2rem;
+    color: #5d4037; /* Medium brown */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+  }
+  
+  .project-button:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Task Styling */
+  .task {
+    background-color: #f1e0c6; /* Light beige */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-
-    
-
- 
-border: 2px solid yellow;
-
-height: 35px;
-
-width: 300px;
-
-top: 20px;
-
-left: 30px;
-    
-
-
-}
-
-
-.scspandiv2 {
-
+    height: 200px;
+    overflow: hidden;
+  }
   
-
-    display: flex;
-
-    justify-content: flex-start;
-
-    border: 2px solid yellow;
-
-    height: 35px;
-
-    width: 280px;
-
-    top: 20px;
-
-    right: -40px;
+  .task:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
   
-
-
-}
-
-.safspan {
-
-    display: flex;
-
-    justify-content: center;
-
-    border: 1px solid red;
-    width: 50px;
-    height: 30px;
-    
-    top: 20px;
-
-    left: 50px;
-
-}
-
-.sfspan {
-
-  display: flex;
-
-
-  justify-content: center;
-
-  align-items: center;
-
-  flex-wrap: wrap;
-
-
-
-    border: 1px solid red;
-    width: 100px;
-    height: 30px;
-    
-    top: 20px;
-
-    left: 50px;
-
-}
-
-.stspan {
-
-
-      display: flex;
-
-      align-items: center;
-
-
-
-
-    border: 1px solid red;
-
-
+  /* Headings for Task */
+  .task h3 {
+    color: #3e2723; /* Deep brown */
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
   
-
-    border: 1px solid red;
-    width: 50px;
-    height: 30px;
-    
-    top: 20px;
-
-    left: 130px ;
-
-    color: grey;
-}
-
-
-
-
-
-
-.sthspan {
-
-
+  /* Task Paragraph */
+  .task p {
+    font-size: 1rem;
+    color: #5d4037; /* Medium brown */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+  }
+  
+  .task-content {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  /* Task Delete Button Styling */
+  .task button.delete-task-btn {
+    background-color: #d32f2f; /* Red-Orange */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .task button.delete-task-btn:hover {
+    background-color: #c62828; /* Darker Red-Orange on hover */
+  }
+  
+  .task button.delete-task-btn:active {
+    background-color: #b71c1c; /* Even darker Red-Orange on click */
+  }
+  
+  /* Responsiveness: Adjust Grid for Small Screens */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "projects-section"
+        "tasks-section";
+    }
+  
+    .projects-list,
+    .tasks-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Modal Styling */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1e0c6;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .modal-content {
     display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-
-
-    border: 1px solid red;
-
-
-
-    border: 1px solid red;
-    width: 50px;
-    height: 30px;
-    
-    top: 20px;
-    right: 220px;
-}
-
-.sfospan {
-
-
+    flex-direction: column;
+  }
+  
+  .modal h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #3e2723;
+  }
+  
+  .modal label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #5d4037;
+  }
+  
+  .modal input,
+  .modal textarea,
+  .modal select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .modal textarea {
+    resize: none;
+  }
+  
+  .modal-actions {
     display: flex;
-
-    align-items: center;
-
-
-    border: 1px solid red;
-
- 
-
-    border: 1px solid red;
-    width: 120px;
-    height: 30px;
-    
-    top: 20px;
-    right: 80px;
-}
-
-.sfispan {
-
-    display: flex;
-
-    align-items: center;
-
-
-    border: 1px solid red;
-
- 
-
-    border: 1px solid red;
-    width: 50px;
-    height: 30px;
-    
-    top: 20px;
-    right: 80px;
-
-
-}
-
-.ssispan {
-
-    display: flex;
-
-    align-items: center;
-
-
-    border: 1px solid red;
-
- 
-
-    border: 1px solid red;
-    width: 60px;
-    height: 30px;
-    
-    top: 20px;
-    right: 80px;
-
-
-
-}
-
-
-
-
-
-.sdlabel {
-
-    position: absolute;
-
-
-   top: 170px;
-
-   left: 30px;
-}
-
-.starea {
-
-    position: absolute;
-
-    left: 32px;
-
-   top: 200px;
-
-   height: 120px;
-}
-
-.sddlabel {
-    position: absolute;
-    top: 370px;
-    left: 30px;
-}
-
-.sdinput {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
-
-.splabel {
-    position: absolute;
-    top: 440px;
-    left: 30px;
-}
-
-.slist {
-    position: absolute;
-   top: 465px;
-   left: 30px;
-}
-
-
-
-
-.sdsbutton {
-
-    position: absolute;
-    top: 500px;
-    left: 30px;
-}
-
-
-.scanbutton {
-    position: absolute;
-    top: 500px;
-    left: 120px;
-
-}
-
-
-
-
-
-
-
-
-.foot {
-
-    position: absolute;
-    width: 100vw;
-    height: 5vh;
-    bottom: 0vh;
-    background-color: lightgray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
+    justify-content: space-between;
+  }
+  
+  .modal-btn {
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-btn:hover {
+    background-color: #5d4037;
+  }
+  
+  .modal-btn:active {
+    background-color: #4e342e;
+  }

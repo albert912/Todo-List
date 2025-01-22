@@ -1,16 +1,15 @@
 import "./styles.css";
+import {reconstructProjects, addNewProject} from './dom';
 
 
 
-import { ui } from './dom.js';
+const addProjectBtn = document.querySelector(".add-project-btn");
+// const addTaskBtn = document.querySelector(".add-task-btn");
 
+document.addEventListener("DOMContentLoaded", () => {
+    reconstructProjects();
+    addProjectBtn.addEventListener('click', addNewProject);
+   // addTaskBtn.addEventListener('click', addTaskBtn);
+});
 
-ui();
-
-import { Todo , todo1 } from './application.js';
-
-
-
-
-todo1.apply();
-
+console.log("Hello!")
